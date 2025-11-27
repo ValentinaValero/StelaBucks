@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/navbar.css">
   <title>StelaBucks</title>
 
   <style>
@@ -12,34 +14,20 @@
       background: #fff;
     }
 
-    header {
-      background: #5a2d3a;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 20px;
-    }
-
-    header a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-    }
+  
 
     #hero {
       width: 100%;
       height: 420px;
-      background: url("https://i.imgur.com/8G7w8KP.jpeg") center/cover no-repeat;
+      background: url("https://boasnovasmg.com.br/wp-content/uploads/2024/07/coffee-4828393_1280.jpg") center/cover no-repeat;
       display: flex;
       align-items: center;
       color: white;
     }
 
     #hero .content {
-      margin-left: 55%;
-      max-width: 320px;
+      margin-left: 60%;
+      max-width: 380px;
     }
 
     #hero button {
@@ -62,7 +50,7 @@
     .products {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+      gap: 50px;
       max-width: 900px;
       margin: 0 auto;
     }
@@ -81,13 +69,22 @@
     }
 
     .card button {
-      background: #0b3d29;
+      background: #199262;
       color: white;
       border: none;
-      padding: 8px 18px;
+      padding: 15px 30px;
       border-radius: 20px;
       margin-top: 10px;
       cursor: pointer;
+      transition: 0.4s;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 17px;
+  
+    }
+
+    .card button:hover{
+      transform: scale(1.06);
+      background: #136d49;
     }
 
     .ver-tudo {
@@ -102,6 +99,10 @@
 
     .feedback {
       background: #5a2d3a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       color: white;
       padding: 40px 20px;
       border-radius: 20px;
@@ -114,6 +115,7 @@
       padding: 12px;
       border-radius: 10px;
       border: none;
+      margin-top: 20px;
       margin-bottom: 20px;
     }
 
@@ -121,19 +123,35 @@
       background: #f9aac3;
       border: none;
       padding: 12px 25px;
-      border-radius: 20px;
+      border-radius: 15px;
       font-size: 18px;
       cursor: pointer;
       color: #5a2d3a;
       font-weight: bold;
+      width: 93%;
+      transition: 0.3s;
+    }
+
+    .feedback button:hover{
+      transform: scale(1.03);
+      background: #c56382;
+      color: #fafafa;
     }
 
     .about {
       background: #fafafa;
       text-align: center;
       padding: 50px 60px;
-      font-size: 14px;
+      
+      font-size: 20px;
       line-height: 1.8;
+    }
+
+    .about p{
+      margin-left: 7%;
+      margin-right: 7%;
+      padding: 2%;
+
     }
 
     footer {
@@ -154,29 +172,64 @@
       font-size: 18px;
       cursor: pointer;
     }
+
+    .fundo{
+      background-color: #270a0ad8;
+      padding: 50px;
+      border-radius: 20px;
+    }
+
+    /* Remova: opacity: 0.3; */
+.fundinho {
+  padding: 20px;
+  /* overlay branco sem deixar o texto transparente */
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+                    url('https://img.freepik.com/vetores-gratis/padrao-de-desenho-de-graos-de-cafe-desenhados-a-mao_23-2150646733.jpg');
+  
+  background-position: center;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+    
   </style>
 </head>
 
 <body>
-  <header>
-    <a href="#">Saiba mais</a>
-    <a href="#">🛒</a>
-    <a href="#">👤</a>
-  </header>
+
+  <nav>
+    <div>
+      <a href="perfil.html"><img src="../IMG/perfil.png" alt=""></a>
+      <a href="sobre.html">Sobre nós</a>
+    </div>
+    <div>
+      <a href="inicio.html">
+        <img src="../IMG/logo.png" alt="">
+      </a>
+    </div>
+    <div>
+      <a href="carrinho.html"><i class="fa-solid fa-cart-shopping my-icon"></i></a>
+      <a href="pedidos.html"><i class="fa-regular fa-note-sticky my-icon"></i></a>
+    </div>
+  </nav>
 
   <section id="hero">
     <div class="content">
+      <div class="fundo">
       <h4>RECEITA</h4>
       <h1>Caffé Mocha</h1>
       <p>
         Um pouco de chantilly e uma pitada de raspas de chocolate são os elementos deste clássico Starbucks® rico em chocolate.
       </p>
       <button>CONFIRA</button>
+      </div>
     </div>
   </section>
 
   <section>
+    <div class="fundinho">
     <h2>Nossos Produtos</h2>
+    </div>
     <div class="products" id="produtos"></div>
     <button class="ver-tudo">ver tudo</button>
   </section>
@@ -191,22 +244,13 @@
     <button onclick="enviarComentario()">Enviar Comentário</button>
   </section>
 
-  <section class="about">
+  
+    <div class="fundinho about">
     <p>
       A Stelabucks é uma das maiores e mais reconhecidas empresas de café do mundo, fundada em 1971 na cidade de Seattle, Estados Unidos. Inicialmente, a marca começou como uma pequena loja especializada em grãos de café de alta qualidade, mas ao longo dos anos se transformou em uma rede internacional que combina cafeterias modernas, ambiente acolhedor e uma forte identidade cultural.<br /><br />Hoje, a Stelabucks está presente em diversos países e se consolidou como símbolo global de qualidade, inovação e cultura do café.
     </p>
-  </section>
-
-  <footer>
-    <img src="https://i.imgur.com/rx9s6HU.png" />
-    <p>EstelaBucks</p>
-    <div class="icons">
-      <i>📷</i>
-      <i>📘</i>
-      <i>💬</i>
-      <i>📱</i>
     </div>
-  </footer>
+ 
 
   <script>
     const produtos = [1, 2, 3, 4, 5, 6];
@@ -217,10 +261,13 @@
       card.className = "card";
 
       card.innerHTML = `
-        <img src="https://i.imgur.com/yN6Bv0B.png" />
+        <img src="https://png.pngtree.com/png-vector/20240320/ourmid/pngtree-cup-of-cappuccino-with-whipped-cream-isolated-on-white-background-png-image_12001966.png" />
         <p>Café ao leite by NESCAFÉ® Dolce Gusto® - 250ml</p>
+        <br>
         <p>⭐⭐⭐⭐⭐</p>
-        <button>Comprar</button>
+        <br>
+        <button class="botao">Comprar</button>
+        <br><br>
       `;
 
       container.appendChild(card);

@@ -4,6 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="../CSS/sobre.css">
+<link rel="stylesheet" href="../CSS/navbar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <title>EstelaBucks - Sobre</title>
 <style>
   body {
@@ -13,26 +15,6 @@
     color: #3d2b30;
   }
 
-  header {
-    background: #5a2d3a;
-    color: white;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  header .icons {
-    display: flex;
-    gap: 20px;
-    font-size: 20px;
-  }
-
-  header a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-  }
 
   /* HERO */
   #hero {
@@ -146,17 +128,24 @@
 </head>
 <body>
 
-<header>
-  <a href="#">Saiba mais</a>
-  <img src="https://i.imgur.com/rx9s6HU.png" width="55" />
-  <div class="icons">
-    <span>🛒</span>
-    <span>📄</span>
-  </div>
-</header>
+<nav>
+    <div>
+      <a href="perfil.html"><img src="../IMG/perfil.png" alt=""></a>
+      <a href="sobre.html">Sobre nós</a>
+    </div>
+    <div>
+      <a href="inicio.html">
+        <img src="../IMG/logo.png" alt="">
+      </a>
+    </div>
+    <div>
+      <a href="carrinho.html"><i class="fa-solid fa-cart-shopping my-icon"></i></a>
+      <a href="pedidos.html"><i class="fa-regular fa-note-sticky my-icon"></i></a>
+    </div>
+  </nav>
 
 <section id="hero">
-  <img src="https://i.imgur.com/rx9s6HU.png" class="logo" />
+  <img src="../IMG/logo.png" class="logo" />
   <div class="text">
     <h1>EstelaBucks</h1>
     <h3>Uma iniciativa além do café</h3>
