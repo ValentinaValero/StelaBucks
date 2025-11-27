@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../CSS/carrinho.css">
+  <title>Carrinho de Compras - Stelabucks</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background: #e6dede;
+    }
+
+    /* HEADER */
+    header {
+      background: #643d4c;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+    .header-left, .header-right {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .header-logo img {
+      width: 55px;
+      border-radius: 50%;
+    }
+
+    /* CONTAINER */
+    .container {
+      width: 85%;
+      margin: 40px auto;
+      background: #e6dede;
+      border-radius: 15px;
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      color: #3d2f33;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid #555;
+      margin-bottom: 30px;
+    }
+
+    /* CARD DO ITEM */
+    .item-card {
+      background: #f9dce4;
+      padding: 25px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 18px;
+    }
+
+    .item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .item-left {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .item-left img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .item-title {
+      max-width: 350px;
+      font-weight: 500;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .qty-control {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .qty-control button {
+      width: 25px;
+      height: 25px;
+      border: 1px solid #aaa;
+      background: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .delete-btn {
+      background: #ff4b4b;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .item-bottom {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-top: 1px solid #c9baba;
+      padding-top: 15px;
+    }
+
+    .item-bottom img {
+      width: 25px;
+      opacity: 0.7;
+    }
+
+    /* FOOTER TOTAL */
+    .footer-total {
+      width: 100%;
+      background: #b9aeae;
+      padding: 40px 0;
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline: 60px;
+    }
+
+    .total-box {
+      background: #d1c3c3;
+      padding: 18px 25px;
+      border-radius: 12px;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .buy-btn {
+      background: #4f874f;
+      color: white;
+      font-size: 24px;
+      padding: 18px 60px;
+      border-radius: 15px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <span>Saiba mais</span>
+    </div>
+
+    <div class="header-logo">
+      <img src="" alt="Logo" />
+    </div>
+
+    <div class="header-right">
+      <span>🛒</span>
+      <span>📝</span>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Carrinho de Compras</h1>
+    <hr />
+
+    <div class="item-card">
+      <div class="item-top">
+        <div class="item-left">
+          <img src="" alt="Café"> 
+          <div class="item-title">Café ao leite by NESCAFÉ® Dolce Gusto®</div>
+        </div>
+
+        <div class="price">R$ 27,90</div>
+
+        <div class="qty-control">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+
+        <button class="delete-btn">Excluir</button>
+      </div>
+
+      <div class="item-bottom">
+        <img src="" alt="caminhão">
+        <span>Frete grátis em pedidos acima de R$ 20,00</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-total">
+    <div class="total-box">Total da compra + frete: <strong>R$ 27,90</strong></div>
+    <button class="buy-btn">Comprar</button>
+  </div>
+
+</body>
+</html>

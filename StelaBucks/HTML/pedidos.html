@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../CSS/pedidos.css">
+<title>Pedidos - Stelabucks</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Georgia', serif;
+        background-color: #e7dbdb;
+        color: #3b2a2f;
+    }
+
+    header {
+        background-color: #663747;
+        padding: 15px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+    }
+
+    header a { color: white; text-decoration: none; }
+    header img.logo { width: 45px; }
+
+    .container {
+        width: 90%;
+        margin: 40px auto;
+        background: #dfd2d2;
+        padding: 40px;
+        border-radius: 12px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .card {
+        background: #fcd9e2;
+        border-radius: 20px;
+        padding: 30px;
+        margin-top: 40px;
+    }
+
+    .top-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .top-left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .product-img {
+        width: 90px;
+        height: 90px;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    .order-id {
+        background: #f7bccc;
+        padding: 20px;
+        border-radius: 12px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #bbaaaa;
+        margin: 25px 0;
+    }
+
+    .info-row {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .map {
+        width: 100%;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <a href="#">Saiba mais</a>
+    <img src="logo.png" class="logo" alt="logo">
+    <div>🛒 📝</div>
+</header>
+
+<div class="container">
+    <h1>Pedidos</h1>
+
+    <div class="card">
+        <div class="top-row">
+            <div class="top-left">
+                <img src="coffee.png" class="product-img" alt="Produto">
+                <div>
+                    <strong>Café ao leite by NESCAFÉ® Dolce Gusto®</strong>
+                </div>
+            </div>
+
+            <div><strong>R$ 27,90</strong></div>
+
+            <div class="order-id">
+                <strong>ID do pedido:</strong><br>
+                23942304
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="info-row">☕ Tempo estimado de Entrega: 20:00 min</div>
+        <div class="info-row">📋 Estado do pedido: A caminho do endereço</div>
+
+        <img src="map.png" class="map" alt="Mapa da entrega">
+    </div>
+</div>
+
+</body>
+</html>

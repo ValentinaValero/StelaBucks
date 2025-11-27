@@ -1,0 +1,156 @@
+<!-- HTML + CSS completos da página de Ingredientes e Modo de Preparo -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../CSS/sobre_cafe.css">
+<title>Ingredientes e Modo de Preparo - Stelabucks</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Georgia', serif;
+        background-color: #fff;
+        color: #3b2a2f;
+    }
+
+    header {
+        background-color: #663747;
+        padding: 15px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+    }
+
+    header a { color: white; text-decoration: none; }
+
+    header img.logo {
+        width: 45px;
+    }
+
+    .title-section {
+        text-align: center;
+        margin: 50px 0 20px;
+    }
+
+    .title-section h1 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .title-section h2 {
+        font-size: 20px;
+        margin-top: -5px;
+        color: #4a3d40;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        padding: 40px;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background-color: #fcd9e2;
+        padding: 30px;
+        border-radius: 20px;
+        width: 380px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .card ul { font-size: 18px; }
+
+    .nutri-img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .prep-section {
+        text-align: center;
+        margin-top: 40px;
+        padding: 60px;
+        background-color: #fcd9e2;
+    }
+
+    .prep-section h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .video-box img {
+        width: 70%;
+        max-width: 500px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    footer {
+        background-color: #663747;
+        text-align: center;
+        padding: 50px 20px 30px;
+        color: white;
+        margin-top: 60px;
+    }
+
+    footer img.logo-footer {
+        width: 70px;
+    }
+
+</style>
+</head>
+<body>
+
+<header>
+    <a href="#">Saiba mais</a>
+    <img src="logo.png" class="logo" alt="logo">
+    <div>🛒 ☰</div>
+</header>
+
+<section class="title-section">
+    <h1>Café ao leite by NESCAFÉ® Dolce Gusto®</h1>
+    <h2>Torra Média</h2>
+</section>
+
+<section class="container">
+    <div class="card">
+        <h3>Ingredientes:</h3>
+        <p><strong>Café ao leite by NESCAFÉ® Dolce Gusto® - 250ml</strong></p>
+        <ul>
+            <li>Cápsula StelaBucks Caffè Latte</li>
+            <li>Leite em pó integral</li>
+            <li>Açúcar</li>
+            <li>Café solúvel (instantâneo)</li>
+            <li>Regulador de acidez (bicarbonato de sódio)</li>
+            <li>Café torrado e moído (uma pequena parte)</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <img src="informacao.png" alt="Tabela Nutricional" class="nutri-img" />
+    </div>
+</section>
+
+<section class="prep-section">
+    <h2>Modo de Preparo</h2>
+    <div class="video-box">
+        <img src="videoimage.png" alt="Video" />
+    </div>
+</section>
+
+<footer>
+    <img src="logo.png" class="logo-footer" />
+    <p>EstelaBucks</p>
+    <p>© 2024 Stelabucks Corporation</p>
+</footer>
+
+</body>
+</html>
