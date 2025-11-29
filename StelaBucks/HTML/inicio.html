@@ -1,198 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../CSS/navbar.css">
+  <link rel="stylesheet" href="../CSS/inicio.css">
   <title>StelaBucks</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: "Georgia", serif;
-      background: #fff;
-    }
-
-  
-
-    #hero {
-      width: 100%;
-      height: 420px;
-      background: url("https://boasnovasmg.com.br/wp-content/uploads/2024/07/coffee-4828393_1280.jpg") center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      color: white;
-    }
-
-    #hero .content {
-      margin-left: 60%;
-      max-width: 380px;
-    }
-
-    #hero button {
-      background: #0b3d29;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 20px;
-      margin-top: 15px;
-      cursor: pointer;
-    }
-
-    section h2 {
-      text-align: center;
-      font-size: 32px;
-      margin: 40px 0;
-      font-weight: 700;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 50px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .card {
-      background: #ffe1ea;
-      padding: 20px;
-      border-radius: 20px;
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .card img {
-      width: 120px;
-      margin: auto;
-    }
-
-    .card button {
-      background: #199262;
-      color: white;
-      border: none;
-      padding: 15px 30px;
-      border-radius: 20px;
-      margin-top: 10px;
-      cursor: pointer;
-      transition: 0.4s;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      font-size: 17px;
-  
-    }
-
-    .card button:hover{
-      transform: scale(1.06);
-      background: #136d49;
-    }
-
-    .ver-tudo {
-      display: block;
-      margin: 40px auto;
-      background: #f9aac3;
-      border: none;
-      padding: 10px 25px;
-      border-radius: 20px;
-      cursor: pointer;
-    }
-
-    .feedback {
-      background: #5a2d3a;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      padding: 40px 20px;
-      border-radius: 20px;
-      max-width: 700px;
-      margin: 40px auto;
-    }
-
-    .feedback input {
-      width: 90%;
-      padding: 12px;
-      border-radius: 10px;
-      border: none;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    .feedback button {
-      background: #f9aac3;
-      border: none;
-      padding: 12px 25px;
-      border-radius: 15px;
-      font-size: 18px;
-      cursor: pointer;
-      color: #5a2d3a;
-      font-weight: bold;
-      width: 93%;
-      transition: 0.3s;
-    }
-
-    .feedback button:hover{
-      transform: scale(1.03);
-      background: #c56382;
-      color: #fafafa;
-    }
-
-    .about {
-      background: #fafafa;
-      text-align: center;
-      padding: 50px 60px;
-      
-      font-size: 20px;
-      line-height: 1.8;
-    }
-
-    .about p{
-      margin-left: 7%;
-      margin-right: 7%;
-      padding: 2%;
-
-    }
-
-    footer {
-      background: #5a2d3a;
-      color: white;
-      text-align: center;
-      padding: 30px 0;
-      margin-top: 40px;
-    }
-
-    footer img {
-      width: 60px;
-      margin-bottom: 10px;
-    }
-
-    footer .icons i {
-      margin: 0 10px;
-      font-size: 18px;
-      cursor: pointer;
-    }
-
-    .fundo{
-      background-color: #270a0ad8;
-      padding: 50px;
-      border-radius: 20px;
-    }
-
-    /* Remova: opacity: 0.3; */
-.fundinho {
-  padding: 20px;
-  /* overlay branco sem deixar o texto transparente */
-  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
-                    url('https://img.freepik.com/vetores-gratis/padrao-de-desenho-de-graos-de-cafe-desenhados-a-mao_23-2150646733.jpg');
-  
-  background-position: center;
-  margin-top: 2%;
-  margin-bottom: 3%;
-}
-
-    
-  </style>
+ 
 </head>
 
 <body>
@@ -208,30 +25,31 @@
       </a>
     </div>
     <div>
-      <a href="carrinho.html"><i class="fa-solid fa-cart-shopping my-icon"></i></a>
-      <a href="pedidos.html"><i class="fa-regular fa-note-sticky my-icon"></i></a>
+      <a href="../HTML/carrinho.html"><i class="fa-solid fa-cart-shopping my-icon"></i></a>
+      <a href="../HTML/pedidos.html"><i class="fa-regular fa-note-sticky my-icon"></i></a>
     </div>
   </nav>
 
   <section id="hero">
     <div class="content">
       <div class="fundo">
-      <h4>RECEITA</h4>
-      <h1>Caffé Mocha</h1>
-      <p>
-        Um pouco de chantilly e uma pitada de raspas de chocolate são os elementos deste clássico Starbucks® rico em chocolate.
-      </p>
-      <button>CONFIRA</button>
+        <h4>RECEITA</h4>
+        <h1>Caffé Mocha</h1>
+        <p>
+          Um pouco de chantilly e uma pitada de raspas de chocolate são os elementos deste clássico Starbucks® rico em
+          chocolate.
+        </p>
+        <a href="sobre_cafe.html">CONFIRA</a>
       </div>
     </div>
   </section>
 
   <section>
     <div class="fundinho">
-    <h2>Nossos Produtos</h2>
+      <h2>Nossos Produtos</h2>
     </div>
     <div class="products" id="produtos"></div>
-    <button class="ver-tudo">ver tudo</button>
+
   </section>
 
   <section class="feedback">
@@ -244,13 +62,20 @@
     <button onclick="enviarComentario()">Enviar Comentário</button>
   </section>
 
-  
-    <div class="fundinho about">
+
+  <div class="fundinho about">
     <p>
-      A Stelabucks é uma das maiores e mais reconhecidas empresas de café do mundo, fundada em 1971 na cidade de Seattle, Estados Unidos. Inicialmente, a marca começou como uma pequena loja especializada em grãos de café de alta qualidade, mas ao longo dos anos se transformou em uma rede internacional que combina cafeterias modernas, ambiente acolhedor e uma forte identidade cultural.<br /><br />Hoje, a Stelabucks está presente em diversos países e se consolidou como símbolo global de qualidade, inovação e cultura do café.
+      A Stelabucks é uma das maiores e mais reconhecidas empresas de café do mundo, fundada em 1971 na cidade de
+      Seattle, Estados Unidos. Inicialmente, a marca começou como uma pequena loja especializada em grãos de café de
+      alta qualidade, mas ao longo dos anos se transformou em uma rede internacional que combina cafeterias modernas,
+      ambiente acolhedor e uma forte identidade cultural.<br /><br />Hoje, a Stelabucks está presente em diversos países
+      e se consolidou como símbolo global de qualidade, inovação e cultura do café.
     </p>
-    </div>
- 
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+
+
 
   <script>
     const produtos = [1, 2, 3, 4, 5, 6];
@@ -264,9 +89,14 @@
         <img src="https://png.pngtree.com/png-vector/20240320/ourmid/pngtree-cup-of-cappuccino-with-whipped-cream-isolated-on-white-background-png-image_12001966.png" />
         <p>Café ao leite by NESCAFÉ® Dolce Gusto® - 250ml</p>
         <br>
+        <h3>R$27</h3>
+        <br>
         <p>⭐⭐⭐⭐⭐</p>
         <br>
-        <button class="botao">Comprar</button>
+        <div class="alinhamento">
+        <a href="../HTML/carrinho.html" class="botao">Comprar</a>
+        <button class="btn-carrinho"><i class="fa-solid fa-cart-shopping my-icon"></i></button>
+        </div>
         <br><br>
       `;
 
@@ -284,6 +114,26 @@
       alert("Comentário enviado! Obrigado.");
       document.getElementById("comentario").value = "";
     }
+
+    (function () {
+      const cartBtns = document.querySelectorAll('.btn-carrinho');
+      const toastEl = document.getElementById('toast');
+      let toastTimer = null;
+      function showToast(text, duration = 1800) {
+        if (!toastEl) return;
+        toastEl.hidden = false;
+        toastEl.textContent = text;
+        toastEl.classList.add('visible');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toastEl.classList.remove('visible');
+          setTimeout(() => { toastEl.hidden = true; }, 240);
+        }, duration);
+      }
+      cartBtns.forEach(btn => btn.addEventListener('click', () => showToast('Item adicionado ao carrinho')));
+    })();
+
   </script>
 </body>
+
 </html>

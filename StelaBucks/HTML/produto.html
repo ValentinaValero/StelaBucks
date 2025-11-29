@@ -1,205 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../CSS/produto.css">
-  <title>Produto - EstelaBucks</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Georgia", serif;
-      background: #fff;
-      color: #2b2b2b;
-    }
+  <link rel="stylesheet" href="../CSS/navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    /* NAV */
-    header {
-      background: #63354a;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 40px;
-    }
-    header a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    .nav-icons {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      font-size: 20px;
-    }
-    .nav-logo img {
-      width: 42px;
-    }
-
-    /* TÍTULO */
-    h1 {
-      text-align: center;
-      margin-top: 35px;
-      font-size: 34px;
-    }
-    h2 {
-      text-align: center;
-      font-size: 20px;
-      margin-top: -10px;
-      font-weight: 400;
-    }
-
-    /* CARD DO PRODUTO */
-    .product-box {
-      width: 75%;
-      margin: 40px auto;
-      background: #ffdce6;
-      padding: 35px;
-      border-radius: 20px;
-      display: flex;
-      gap: 30px;
-      align-items: center;
-    }
-    .product-box img {
-      width: 260px;
-      border-radius: 12px;
-    }
-    .product-description {
-      flex: 1;
-      background: #ffb9c8;
-      padding: 25px;
-      border-radius: 15px;
-    }
-    .price {
-      font-size: 32px;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    .buy-btn {
-      background: #2b4f27;
-      color: white;
-      padding: 12px 30px;
-      font-size: 20px;
-      border-radius: 10px;
-      border: none;
-      cursor: pointer;
-      margin-top: 15px;
-    }
-    .prep-btn {
-      margin-top: 20px;
-      background: #63354a;
-      padding: 14px;
-      text-align: center;
-      color: white;
-      border-radius: 12px;
-      font-size: 17px;
-      cursor: pointer;
-    }
-
-    /* COMENTÁRIOS */
-    .comments-title {
-      text-align: center;
-      font-size: 35px;
-      margin-top: 70px;
-      font-weight: bold;
-    }
-    .comment-box {
-      width: 75%;
-      margin: 30px auto;
-      background: #ffdce6;
-      padding: 30px;
-      border-radius: 18px;
-    }
-    .single-comment {
-      background: #ffb9c8;
-      padding: 22px;
-      border-radius: 15px;
-      margin-bottom: 20px;
-    }
-    .user-info {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .user-info img {
-      width: 40px;
-      border-radius: 50%;
-      background: #ddd;
-    }
-    .stars {
-      float: right;
-      margin-top: -30px;
-      font-size: 20px;
-      color: gold;
-    }
-    .comment-input {
-      display: flex;
-      gap: 15px;
-      margin-top: 25px;
-      background: white;
-      padding: 14px 18px;
-      border-radius: 12px;
-    }
-    textarea {
-      width: 100%;
-      border: none;
-      outline: none;
-      resize: none;
-      font-size: 16px;
-      font-family: inherit;
-    }
-    .send-btn {
-      width: 100%;
-      background: #f08a9f;
-      color: white;
-      padding: 14px;
-      margin-top: 15px;
-      text-align: center;
-      border-radius: 12px;
-      font-size: 20px;
-      cursor: pointer;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #63354a;
-      color: white;
-      text-align: center;
-      padding: 40px;
-      margin-top: 60px;
-    }
-    footer img {
-      width: 55px;
-      margin-bottom: 10px;
-    }
-    footer p {
-      margin: 6px 0;
-      font-size: 12px;
-    }
-  </style>
+  <title>Produto</title>
+  
 </head>
+
 <body>
-  <header>
-    <a href="#">Saiba mais</a>
-    <div class="nav-logo"><img src="logo.png" alt="Logo" /></div>
-    <div class="nav-icons">🛒 👤</div>
-  </header>
+
+  <nav>
+    <div>
+      <a href="perfil.html"><img src="../IMG/perfil.png" alt=""></a>
+      <a href="sobre.html">Sobre nós</a>
+    </div>
+    <div>
+      <a href="inicio.html">
+        <img src="../IMG/logo.png" alt="">
+      </a>
+    </div>
+    <div>
+      <a href="carrinho.html"><i class="fa-solid fa-cart-shopping my-icon"></i></a>
+      <a href="pedidos.html"><i class="fa-regular fa-note-sticky my-icon"></i></a>
+    </div>
+  </nav>
+
 
   <h1>Café ao leite by NESCAFÉ® Dolce Gusto®</h1>
+  <br>
   <h2>Torra Média</h2>
 
   <div class="product-box">
-    <img src="coffee.jpg" alt="Café" />
+    <div class="alinhamento">
+      <img src="../IMG/cafe1.png" alt="Café" />
 
-    <div class="product-description">
-      <p>
-        O café com leite é uma bebida popular feita com a combinação de café coado e leite, sendo uma das opções matinais mais consumidas no mundo.
-      </p>
-      <div class="price">R$ 27,90</div>
-      <button class="buy-btn">Comprar</button>
-      <div class="prep-btn">Modo de preparo e ingredientes</div>
+      <div class="product-description">
+        <p>
+          O café com leite é uma bebida popular feita com a combinação de café coado e leite, sendo uma das opções
+          matinais mais consumidas no mundo.
+        </p>
+
+      </div>
+      <div class="alinhamento2">
+        <div class="price">R$ 27,90</div>
+        <a href="../HTML/carrinho.html" class="buy-btn">Comprar</a>
+        <button class="btn-carrinho"><i class="fa-solid fa-cart-shopping my-icon"></i></button>
+      </div>
     </div>
+
+
+    <a href="../HTML/sobre_cafe.html" class="prep-btn">
+      <p>Modo de preparo e ingredientes</p>
+    </a>
   </div>
 
   <h1 class="comments-title">Comentários</h1>
@@ -207,26 +64,135 @@
   <div class="comment-box">
     <div class="single-comment">
       <div class="user-info">
-        <img src="user.png" />
+        <img src="../IMG/perfil.png" />
         <strong>Usuário_1</strong>
       </div>
       <div class="stars">★★★★★</div>
       <p>
-        "Olha... eu não quero me gabar, mas eu entendo de café. E o expresso da Stelabucks? Surpreendentemente encorpado, zero amargor. Dá um baile em muita cafeteria famosa por aí."
+        "Olha... eu não quero me gabar, mas eu entendo de café. E o expresso da Stelabucks? Surpreendentemente
+        encorpado, zero amargor. Dá um baile em muita cafeteria famosa por aí."
       </p>
+
     </div>
 
     <div class="comment-input">
-      <img src="user.png" width="40" />
-      <textarea placeholder="Deixe seu comentário..."></textarea>
+      <img src="../IMG/perfil.png" width="40" />
+      <textarea id="commentText" placeholder="Deixe seu comentário..."></textarea>
     </div>
-    <div class="send-btn">Enviar Comentário</div>
+    <div class="rating" id="rating">
+      <span data-value="1">★</span>
+      <span data-value="2">★</span>
+      <span data-value="3">★</span>
+      <span data-value="4">★</span>
+      <span data-value="5">★</span>
+    </div>
+    <div id="sendCommentBtn" class="send-btn">Enviar Comentário</div>
   </div>
 
-  <footer>
-    <img src="logo.png" />
-    <p>EstelaBucks</p>
-    <p>Nespresso® e NESCAFÉ Dolce Gusto® são marcas registradas...</p>
-  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+
+  <script>
+    const sendBtn = document.getElementById('sendCommentBtn');
+    const commentText = document.getElementById('commentText');
+    const commentBox = document.querySelector('.comment-box');
+    const ratingEl = document.getElementById('rating');
+    let selectedRating = 5; 
+
+    function createCommentElement(text, rating = 5, username = 'Você') {
+      const container = document.createElement('div');
+      container.className = 'single-comment new';
+
+      const userInfo = document.createElement('div');
+      userInfo.className = 'user-info';
+      const img = document.createElement('img');
+      img.src = '../IMG/perfil.png';
+      img.alt = username;
+      img.style.width = '40px';
+      img.style.borderRadius = '50%';
+      const strong = document.createElement('strong');
+      strong.innerText = username;
+      userInfo.appendChild(img);
+      userInfo.appendChild(strong);
+
+      const stars = document.createElement('div');
+      stars.className = 'stars';
+      stars.innerText = '★'.repeat(rating) + '☆'.repeat(5 - rating);
+
+      const p = document.createElement('p');
+      p.innerText = text;
+
+      container.appendChild(userInfo);
+      container.appendChild(stars);
+      container.appendChild(p);
+
+      return container;
+    }
+
+    if (sendBtn) {
+      sendBtn.addEventListener('click', function () {
+        const txt = commentText.value.trim();
+        if (!txt) { alert('Escreva algo'); return; }
+
+        const newComment = createCommentElement(txt, selectedRating);
+       
+        const inputBlock = document.querySelector('.comment-input');
+        commentBox.insertBefore(newComment, inputBlock);
+        commentText.value = '';
+        
+        selectedRating = 5;
+        updateRatingDisplay(selectedRating);
+
+        setTimeout(() => newComment.classList.remove('new'), 600);
+      });
+    }
+
+
+    function updateRatingDisplay(r) {
+      if (!ratingEl) return;
+      const spans = ratingEl.querySelectorAll('span');
+      spans.forEach(s => {
+        const v = parseInt(s.dataset.value, 10);
+        s.classList.toggle('selected', v <= r);
+      });
+    }
+
+    if (ratingEl) {
+      ratingEl.addEventListener('click', (e) => {
+        const s = e.target.closest('span[data-value]');
+        if (!s) return;
+        selectedRating = parseInt(s.dataset.value, 10);
+        updateRatingDisplay(selectedRating);
+      });
+      ratingEl.addEventListener('mouseover', (e) => {
+        const s = e.target.closest('span[data-value]');
+        if (!s) return;
+        updateRatingDisplay(parseInt(s.dataset.value, 10));
+      });
+      ratingEl.addEventListener('mouseleave', () => updateRatingDisplay(selectedRating));
+      
+      updateRatingDisplay(selectedRating);
+    }
+
+
+    (function () {
+      const cartBtns = document.querySelectorAll('.btn-carrinho');
+      const toastEl = document.getElementById('toast');
+      let toastTimer = null;
+      function showToast(text, duration = 1800) {
+        if (!toastEl) return;
+        toastEl.hidden = false;
+        toastEl.textContent = text;
+        toastEl.classList.add('visible');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toastEl.classList.remove('visible');
+          setTimeout(() => { toastEl.hidden = true; }, 240);
+        }, duration);
+      }
+      cartBtns.forEach(btn => btn.addEventListener('click', () => showToast('Item adicionado ao carrinho')));
+    })();
+  </script>
 </body>
+
 </html>

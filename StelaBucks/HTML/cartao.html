@@ -1,181 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="../CSS/cartao.css">
-<title>Cartão Fidelidade - Stelabucks</title>
-<style>
-    body {
-        margin: 0;
-        font-family: 'Georgia', serif;
-        background-color: #ffffff;
-        color: #3b2a2f;
-    }
-
-    header {
-        background-color: #663747;
-        padding: 15px 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: white;
-    }
-
-    header a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-    }
-
-    .logo {
-        width: 55px;
-    }
-
-    .icons {
-        font-size: 26px;
-        display: flex;
-        gap: 20px;
-    }
-
-    /* CONTAINER GERAL */
-    .container {
-        display: flex;
-        justify-content: center;
-        gap: 60px;
-        padding: 60px;
-    }
-
-    /* CARD ESQUERDO */
-    .left-card {
-        background-color: #ffe1e8;
-        padding: 40px;
-        width: 380px;
-        border-radius: 25px;
-    }
-
-    .left-card h2 {
-        font-size: 32px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-
-    .left-card p, .left-card li {
-        font-size: 17px;
-        line-height: 1.6;
-    }
-
-    .left-card ul {
-        margin-top: 10px;
-    }
-
-
-    .card-id {
-        margin-top: 25px;
-        background-color: #f7b8c7;
-        padding: 12px 20px;
-        font-size: 20px;
-        border-radius: 12px;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    /* CARD DIREITO */
-    .right-card {
-        background-color: #ffe1e8;
-        padding: 40px;
-        width: 620px;
-        border-radius: 25px;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 18px;
-        margin-bottom: 35px;
-    }
-
-    .stamp {
-        width: 100%;
-        padding-top: 100%;
-        background-color: #f7b8c7;
-        border-radius: 15px;
-        position: relative;
-    }
-
-    .stamp img {
-        position: absolute;
-        width: 55%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .divider {
-        width: 100%;
-        height: 1px;
-        background-color: #b9a4a9;
-        margin-bottom: 25px;
-    }
-
-    .btn-disabled {
-        width: 280px;
-        padding: 12px;
-        background-color: #d8d8d8;
-        border-radius: 10px;
-        font-size: 20px;
-        text-align: center;
-        color: #7b7b7b;
-        margin: auto;
-    }
-
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/cartao.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Cartão Fidelidade</title>
+    
 </head>
+
 <body>
 
-<header>
-    <a href="#">Saiba mais</a>
-    <img src="logo.png" class="logo" />
-    <div class="icons">🛒 📝 👤</div>
-</header>
+    <nav>
+        <div>
+            <a href="perfil.html"><img src="../IMG/perfil.png" alt=""></a>
+            <a href="sobre.html">Sobre nós</a>
+        </div>
+        <div>
+            <a href="inicio.html">
+                <img src="../IMG/logo.png" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="carrinho.html"><i class="fa-solid fa-cart-shopping my-icon"></i></a>
+            <a href="pedidos.html"><i class="fa-regular fa-note-sticky my-icon"></i></a>
+        </div>
+    </nav>
+    <div class="container">
 
-<div class="container">
+        <!-- CARD ESQUERDO -->
+        <div class="left-card">
+            <h2>Cartão fidelidade</h2>
+            <p>A cada 8 compras feitas no site, o cliente ganha direito a um café de cortesia</p>
 
-    <!-- CARD ESQUERDO -->
-    <div class="left-card">
-        <h2>Cartão fidelidade</h2>
-        <p>A cada 8 compras feitas no site, o cliente ganha direito a um café de cortesia</p>
+            <ul>
+                <li>Cada ID tem direito a somente um cartão fidelidade</li>
+                <li>O cartão se reseta mensalmente</li>
+                <li>O café é escolha do cliente</li>
+                <li>Para resgatar é necessário apresentar o ID</li>
+            </ul>
 
-        <ul>
-            <li>Cada ID tem direito a somente um cartão fidelidade</li>
-            <li>O cartão se reseta mensalmente</li>
-            <li>O café é escolha do cliente</li>
-            <li>Para resgatar é necessário apresentar o ID</li>
-        </ul>
-
-        <div class="card-id">ID do Cartão: 2882702</div>
-    </div>
-
-    <!-- CARD DIREITO -->
-    <div class="right-card">
-        <div class="grid">
-            <div class="stamp"><img src="bean.png"></div>
-            <div class="stamp"><img src="bean.png"></div>
-            <div class="stamp"></div>
-            <div class="stamp"></div>
-
-            <div class="stamp"></div>
-            <div class="stamp"></div>
-            <div class="stamp"></div>
-            <div class="stamp"></div>
+            <div class="card-id">ID do Cartão: 2882702</div>
         </div>
 
-        <div class="divider"></div>
+        <!-- CARD DIREITO -->
+        <div class="right-card">
+            <div class="grid">
+                <div class="stamp"><img src="../IMG/semente.png"></div>
+                <div class="stamp"><img src="../IMG/semente.png"></div>
+                <div class="stamp"></div>
+                <div class="stamp"></div>
 
-        <div class="btn-disabled">Resgatar recompensa</div>
+                <div class="stamp"></div>
+                <div class="stamp"></div>
+                <div class="stamp"></div>
+                <div class="stamp"></div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="btn-disabled">Resgatar recompensa</div>
+        </div>
+
     </div>
 
-</div>
-
 </body>
+
 </html>

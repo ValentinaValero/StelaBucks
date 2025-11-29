@@ -1,0 +1,75 @@
+body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #fff;
+            color: #3b2a2f;
+        }
+
+
+
+        .title-section {
+            text-align: center;
+            margin: 50px 0 20px;
+        }
+
+        .title-section h1 {
+            text-align: center;
+            margin-top: 6%;
+            font-size: 34px;
+        }
+
+        .title-section h2 {
+            text-align: center;
+            font-size: 20px;
+            margin-top: -10px;
+            font-weight: 400;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 80px;
+
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #fcd9e2;
+            padding: 50px;
+            height: 21rem;
+            width: 40%;
+            border-radius: 20px;
+            width: 380px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            line-height: 35px;
+        }
+
+        .card h3 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card ul {
+            font-size: 18px;
+        }
+
+        .nutri-img {
+            display: flex;
+            justify-self: center;
+            margin-top: 0px;
+            width: 70%;
+
+        }
+
+        .prep-section {
+            text-align: center;
+            margin-top: 40px;
+            padding: 60px;
+            background-color: #fcd9e2;
+        }
+
+        .prep-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }

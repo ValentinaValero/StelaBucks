@@ -1,0 +1,140 @@
+  * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background: #e6dede;
+    }
+
+    .container {
+      width: 85%;
+      margin: 25px auto;
+      background: #e6dede;
+      border-radius: 15px;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      color: #3d2f33;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #555;
+      margin-bottom: 30px;
+    }
+
+    .item-card {
+      background: #f9dce4;
+      padding: 25px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 18px;
+    }
+
+    .item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .item-left {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .item-left img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .item-title {
+      max-width: 350px;
+      font-weight: 500;
+    }
+
+    .counter button {
+      width: 25px;
+      height: 25px;
+      border: 1px solid #aaa;
+      background: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .delete-btn {
+      background: #ff4b4b;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .item-bottom {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-top: 1px solid #c9baba;
+      padding-top: 15px;
+    }
+
+    .item-bottom img {
+      width: 25px;
+      opacity: 0.7;
+    }
+
+    .footer-total {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #7d5f5f;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline: 60px;
+    }
+
+    .total-box {
+      background: #d1c3c3;
+      padding: 18px 25px;
+      border-radius: 12px;
+      font-size: 22px;
+      font-weight: 600;
+      display: flex;
+      gap: 10px;
+    }
+
+    .buy-btn {
+      background: #4f874f;
+      color: white;
+      font-size: 24px;
+      padding: 18px 60px;
+      border-radius: 15px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .msg-vazia {
+      color: #555;
+      text-align: center;
+      font-size: 22px;
+      display: none;
+    }

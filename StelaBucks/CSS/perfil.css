@@ -1,0 +1,215 @@
+body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #ffffff;
+            color: #3b2a2f;
+        }
+
+
+        /* Container principal */
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 40px;
+            gap: 40px;
+        }
+
+        /* Primeira linha: user + loja */
+        .top-section {
+            display: flex;
+            gap: 3rem;
+
+            justify-content: center;
+        }
+
+        /* Card do usuário */
+        .user-card {
+            width: 380px;
+            height: 29rem;
+            background-color: #fde4ea;
+            padding: 40px 30px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-card img {
+            width: 60%;
+        }
+
+        .user-card h2 {
+            font-size: 32px;
+            margin-top: 15px;
+        }
+
+        .id-box {
+            background-color: #f9c7d5;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 10px;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .address {
+            margin-top: 25px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Loja Preferencial */
+        .store-card {
+            background-color: #fde4ea;
+            padding: 40px;
+            width: 60%;
+            height: 15rem;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .store-card h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .map-img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        
+        #destaque {
+            border-radius: 15px;
+            border: 6px solid transparent;
+            transition: border-color 0.6s ease, box-shadow 0.6s ease, transform 0.6s ease;
+        }
+
+        .btn-change {
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            justify-self: center;
+            justify-content: center;
+            margin-top: 3%;
+            width: 200px;
+            background-color: #663747;
+            color: white;
+            border: none;
+            padding: 12px 10px;
+            border-radius: 12px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .btn-change:hover,
+        .logout-btn:hover {
+            transform: scale(1.03);
+
+
+        }
+
+        /* Wrapper to position the message over the map */
+        .map-wrapper {
+            position: relative;
+            display: block;
+            width: 100%;
+        }
+
+        /* Small temporary message that fades in/out */
+        .map-message {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            padding: 8px 12px;
+            font-size: 14px;
+            border-radius: 8px;
+            opacity: 0;
+            pointer-events: none;
+            /* does not block clicks */
+            transition: opacity 0.35s ease, transform 0.35s ease;
+            transform-origin: center bottom;
+        }
+
+        .map-message.visible {
+            opacity: 1;
+            transform: translateX(-50%) translateY(-4px);
+        }
+
+        /* Segunda linha: fidelidade + sair */
+        .bottom-section {
+            display: flex;
+
+            gap: 40px;
+            margin-left: 27.5rem;
+            margin-top: -14.7rem;
+
+
+        }
+
+        .fidelity-card,
+        .logout-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #3b2a2f;
+
+            transition: 0.5s;
+            width: 17rem;
+            background-color: #fde4ea;
+            padding: 20px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .fidelity-card h3 {
+            font-size: 26px;
+            margin-bottom: 15px;
+
+        }
+
+        .fidelity-card img {
+            width: 40%;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .logout-btn {
+            margin-top: 20px;
+            width: 60%;
+            padding: 15px;
+            font-size: 22px;
+            border: none;
+            cursor: pointer;
+            border-radius: 15px;
+            background-color: #ff4b4b;
+            color: white;
+            text-decoration: none;
+            transition: 0.5s;
+
+        }
+
+
+        
+        .elementoAlvo {
+            border-color: rgba(255, 235, 59, 0.95);
+            box-shadow: 0 0 20px rgba(244, 67, 54, 0.5);
+            transform: scale(1.02);
+        }
+
+        .fidelity-card:hover {
+            transform: scale(1.03);
+            cursor: pointer;
+
+        }
